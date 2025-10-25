@@ -1,9 +1,20 @@
 {
   "version": 2,
   "builds": [
-    { "src": "dist/**", "use": "@vercel/static" }
+    {
+      "src": "dist/indah-make-up/server/server.mjs",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "dist/indah-make-up/browser/**",
+      "use": "@vercel/static"
+    }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "/dist/indah-make-up/$1" }
+    {
+      "src": "/(.*)",
+      "dest": "dist/indah-make-up/server/server.mjs"
+    }
   ]
 }
+  
