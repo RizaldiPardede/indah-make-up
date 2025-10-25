@@ -1,0 +1,58 @@
+:root {
+  --primary-color: #a2647a;
+  --secondary-color: #c48299;
+  --accent-color: #e3b5c2;
+  --light-bg: #fdf6f8;
+}
+
+/* Background lembut */
+.bg-custom-light {
+  background-color: var(--light-bg);
+}
+
+/* Warna teks */
+.text-custom-primary {
+  color: var(--primary-color);
+}
+
+.text-custom-secondary {
+  color: var(--secondary-color);
+}
+
+.text-custom-accent {
+  color: var(--accent-color);
+}
+
+/* Efek hover pada gambar */
+#portfolio img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  object-fit: cover;
+  height: 250px;
+  border-radius: 12px;
+}
+
+/* Hover lembut */
+#portfolio img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(162, 100, 122, 0.3);
+}
+
+/* Efek hover pada kartu */
+.portfolio-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 14px;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(162, 100, 122, 0.25);
+}
+
+/* Heading section */
+#portfolio h2 {
+  letter-spacing: 1px;
+}
+
+#portfolio {
+  scroll-margin-top: 80px;
+}

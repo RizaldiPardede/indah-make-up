@@ -1,0 +1,41 @@
+<section id="portfolio" class="py-5 bg-custom-light">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-5 text-uppercase text-custom-primary">Our Works</h2>
+
+    <!-- Wedding Section -->
+    <div class="mb-5">
+      <h4 class="fw-semibold mb-4 text-center text-custom-primary">Wedding Make-Up</h4>
+      <div class="row g-4 justify-content-center">
+        <div class="col-sm-6 col-md-4 col-lg-3" *ngFor="let img of weddingImages">
+          <div class="card border-0 shadow-sm portfolio-card">
+            <img [src]="img" class="card-img-top rounded" alt="Wedding Work" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Photoshoot Section -->
+    <div class="mb-5">
+      <h4 class="fw-semibold mb-4 text-center text-custom-secondary">Photoshoot</h4>
+      <div class="row g-4 justify-content-center">
+        <div class="col-sm-6 col-md-4 col-lg-3" *ngFor="let img of photoShootImages">
+          <div class="card border-0 shadow-sm portfolio-card">
+            <img [src]="img" class="card-img-top rounded" alt="Photoshoot Work" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Event Makeup Section -->
+    <div>
+      <h4 class="fw-semibold mb-4 text-center text-custom-accent">Event & Party</h4>
+      <div class="row g-4 justify-content-center">
+        <div class="col-sm-6 col-md-4 col-lg-3" *ngFor="let img of eventImages">
+          <div class="card border-0 shadow-sm portfolio-card">
+            <img [src]="img" class="card-img-top rounded" alt="Event Work" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

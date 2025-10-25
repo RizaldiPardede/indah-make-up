@@ -1,0 +1,48 @@
+:root {
+  --primary-color: #a2647a;
+  --secondary-color: #c48299;
+  --accent-color: #e3b5c2;
+  --light-bg: #fdf6f8;
+}
+
+/* Background lembut */
+.bg-custom-light {
+  background-color: var(--light-bg);
+}
+
+/* Warna teks utama */
+.text-custom-primary {
+  color: var(--primary-color);
+}
+
+.text-custom-secondary {
+  color: var(--secondary-color);
+}
+
+.text-custom-accent {
+  color: var(--accent-color);
+}
+
+/* Efek hover */
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(162, 100, 122, 0.3);
+}
+
+/* Efek animasi pada icon */
+.card-body i {
+  transition: transform 0.3s ease;
+}
+
+.card:hover i {
+  transform: scale(1.2);
+}
+
+/* Scroll behavior */
+#services {
+  scroll-margin-top: 80px;
+}

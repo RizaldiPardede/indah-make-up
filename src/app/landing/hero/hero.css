@@ -1,0 +1,38 @@
+.hero {
+  background: url('/assets/images/Home.jpg') center center / cover no-repeat;
+  height: 90vh;
+  position: relative;
+  color: #fff;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(102, 51, 76, 0.8); /* ungu transparan */
+  z-index: 1;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.search-bar {
+  max-width: 600px;
+}
+
+.search-bar input::placeholder {
+  color: #888;
+}
+
+.btn-primary {
+  background-color: #a2647a;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #8b546a;
+}
