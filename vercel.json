@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     { "src": "dist/indah-make-up/server/main.js", "use": "@vercel/node" },
-    { "src": "dist/indah-make-up/browser/**/*", "use": "@vercel/static" }
+    { "src": "dist/indah-make-up/browser/**", "use": "@vercel/static" }
   ],
   "routes": [
     { "handle": "filesystem" },
