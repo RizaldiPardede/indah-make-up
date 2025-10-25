@@ -8,7 +8,9 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:indah-make-up": "node dist/indah-make-up/server/server.mjs",
-    "build:ssr": "ng build && ng run indah-make-up:server"
+    "build:ssr": "ng build && ng run indah-make-up:server",
+    "serve:ssr": "node dist/indah-make-up/server/main.js",
+    "deploy": "npm run build:ssr && vercel --prod"
   },
   "prettier": {
     "printWidth": 100,
